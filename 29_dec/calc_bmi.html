@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Body Mass Index calculator</h1>
+    <label for="height">Enter your height(In Meter)</label>
+    <input id="height" type="text">
+    <br>
+    <br>
+    <label for="weight">Enter your weight(In KG)</label>
+    <input id="weight" type="text">
+    <br>
+    <br>
+    <button id="calculate_btn">Calculate</button>
+
+    <br>
+    <hr>
+    <div>
+        result: <h1 id="result"></h1>
+    </div>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+    let height = Number(document.querySelector('#height').value);
+    let weight = Number(document.querySelector('#weight').value);
+    let result = document.querySelector('#result');
+    
+    let calculate_btn = document.querySelector('#calculate_btn');
+
+   let result = calculate_btn.addEventListener('click', function() {
+        let finalResult = Number(height.value) + Number(weight.value)
+        alert(result);
+        // result.innerHTML = (weight + height)
+    })
+
+
+
+ 
+</script>
